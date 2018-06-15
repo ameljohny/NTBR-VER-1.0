@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    margin: 0;
+    padding: 0;
+
+    color: #fff;
+}
+.fullpage-view{
+    height: 100vh;
+    width: 100%;
+}
+
+// Testing styles
+.bg-main{
+background-color: #15151e;
+} 
+.bg-secondary{
+    background-color: #292939;
+    } 
+
+.mb-350{
+    margin-bottom: 349px;
+    @media (max-width:480px){
+        margin-bottom: 100vh;
+    }
+}
+p{
+    color: #fff;
+}

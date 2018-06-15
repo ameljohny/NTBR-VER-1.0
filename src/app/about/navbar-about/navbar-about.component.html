@@ -1,0 +1,18 @@
+<div id="aboutnav-container">
+        <div class="verticalnav">
+                <ul id="verticallinks" class="">
+                    <a  routerLink = 'content' routerLinkActive = 'routerLinkActive'  id="li1"  href="#content-history" class="aboutContentLink">
+                        <li>HISTORY</li>
+                    </a>
+                    <a [routerLink] = '[about]' routerLinkActive = 'routerLinkActive' id="li2"  href="content-boatrace" class="aboutContentLink">
+                        <li>BOAT RACE</li>
+                    </a>
+                    <a routerLink = 'aboutvoe'  routerLinkActive = 'routerLinkActive' id="li3" href="#content-voe" class="aboutContentLink">
+                        <li>VENICE OF EAST</li>
+                    </a>
+                    <a  (onClick) = "scrollToNT()"  id="li4" href="#content-nt" class="aboutContentLink">
+                        <li>NEHRU TROPHY</li>
+                    </a>
+                </ul>
+            </div>
+</div>

@@ -1,0 +1,241 @@
+.container-fluid{
+    width: 100vw;
+    overflow-x: hidden;
+    background-image: url('/assets/bg-about.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    padding-left: 30px;
+    padding-right: 30px;
+    @media (max-width: 768px) {
+        padding-top: 0px;
+        
+    }
+    @media (max-width: 480px) {
+        padding-top: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    li{
+        text-align: left;
+    }
+    background-color: aquamarine;
+    .row{
+        width: 100%;
+        padding: -17px;
+        box-sizing: content-box;
+        height: 60vh;
+        @media (max-width: 768px) {
+            height: 80vh;
+         }
+        overflow-y: scroll;
+        overflow-x: hidden;
+        ::-webkit-scrollbar { 
+            display: none; 
+        }
+
+    }
+    ::-webkit-scrollbar { 
+        display: none; 
+    }
+    .aboutContent{
+        height: 100%;
+        .contentHeader{
+           
+           font-weight: 400;
+        }
+   
+        padding-bottom: 150px;  
+        padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
+        box-sizing: content-box;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        @media (max-width: 768px) {
+            
+            padding-bottom: 80px;           
+         }
+         .row{
+             height: 100%;
+             overflow-x: hidden;
+            flex-flow: column nowrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            @media (max-width: 768px) {
+               
+                flex-flow: row wrap;
+                justify-content: space-around;
+                
+            }
+            .whomtocontact{
+                display: flex;
+                flex-flow: row nowrap;
+                flex-shrink: 0;
+                width: 100%;
+
+               .whomtocontact-item{
+                   margin: 0;
+                   flex-shrink: 0;
+               }
+            }
+            .img-fluid{
+                box-sizing: border-box;
+                border: 2px solid #fff;
+                border-radius: 10px;
+            }
+        }
+        p{  
+            font-size: 1em;
+            text-align: left;
+            text-justify: inter-word;
+            font-weight: 300;
+            line-height: 2;
+            @media (max-width: 768px) {
+                font-size: .8em;           
+             }
+        }
+        .line-height{
+            line-height: 1.5;
+        }
+        .qoute{
+            font-style: italic;
+        }
+    }
+    .verticalNav{
+        position: absolute;
+        right: 0;
+        height: 60vh;
+        @media (max-width: 768px) {
+            display: none
+        }
+
+    }
+    .test{
+ 
+        position: absolute;
+        height: 60vh;
+        
+        right: 0;;
+    }
+    .button {
+        position: absolute;
+        bottom: 30px;
+        right: 50px;
+       
+        border-radius: 4px;
+        background: linear-gradient(-45deg, #185a9d, #43cea2);
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 14px;
+        padding: 6px;
+        width: 150px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        @media (max-width: 768px) {
+            bottom: 10px;
+            right: 10px;
+            width: 120px;
+        }
+      }
+      
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+}
+
+.verticalnav{
+    visibility: hidden;
+}
+
+@media screen and (min-width:1205px){
+
+.verticalnav{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 25vw;
+    background-color: rgba(14, 14, 17, 0.747);
+    // clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 0% 100%);
+    -webkit-transform: skew(-20deg);
+	   -moz-transform: skew(-20deg);
+	     -o-transform: skew(-20deg);
+    margin-right: -130px;
+    display: flex;
+    flex-flow: column  nowrap;
+    justify-content: center;
+    align-self: center;
+    align-items:flex-start;  
+    visibility: visible; 
+
+}
+
+#verticallinks li :active{
+    color:rgb(79, 248, 248)!important;
+    text-decoration: none;
+    
+}
+.verticalnav ul {
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+      -o-transform: skew(20deg);
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+ a{
+    color:#fff;
+}
+.routerLinkActive{
+    color: rgb(27, 143, 238);
+}
+
+#li1{
+    padding-left: 75px;
+}
+#li2{
+    padding-left: 60px;
+}
+#li3{
+    padding-left: 45px;
+}
+#li4{
+    padding-left: 30px;
+}
+#li1:hover, #li2:hover, #li3:hover, #li4:hover{
+    color: rgb(79, 248, 248);
+}
+
+}
