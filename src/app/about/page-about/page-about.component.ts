@@ -8,8 +8,12 @@ import $ from 'jquery';
 export class PageAboutComponent implements OnInit {
 
   constructor() { }
-
+  downloadPDF() {
+    window.open('/assets/about-pdf.pdf');
+  }
   ngOnInit() {
+
+
     $(document).ready(function() {
       // Add smooth scrolling to all links
       $('a').on('click', function(event) {

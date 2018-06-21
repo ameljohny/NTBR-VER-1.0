@@ -7,9 +7,7 @@ import { SectionVideointroComponent } from './home/section-videointro/section-vi
 import { SectionLiveComponent } from './home/section-live/section-live.component';
 import { SectionAccordionComponent } from './home/section-accordion/section-accordion.component';
 import { PageAboutComponent } from './about/page-about/page-about.component';
-import { NavbarAboutComponent } from './about/navbar-about/navbar-about.component';
 import { PageContactComponent } from './contact/page-contact/page-contact.component';
-import { NavbarContactComponent } from './contact/navbar-contact/navbar-contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
 import { GalleryComponent } from './gallery/gallery/gallery.component';
@@ -22,9 +20,7 @@ import { GalleryComponent } from './gallery/gallery/gallery.component';
     SectionLiveComponent,
     SectionAccordionComponent,
     PageAboutComponent,
-    NavbarAboutComponent,
     PageContactComponent,
-    NavbarContactComponent,
     FooterComponent,
     NavbarComponent,
     GalleryComponent
