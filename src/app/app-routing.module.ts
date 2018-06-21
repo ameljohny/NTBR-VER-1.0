@@ -4,6 +4,7 @@ import { PageHomeComponent } from './home/page-home/page-home.component';
 import { PageAboutComponent } from './about/page-about/page-about.component';
 import { AppComponent } from './app.component';
 import { PageContactComponent } from './contact/page-contact/page-contact.component';
+import { GalleryComponent } from './gallery/gallery/gallery.component';
 
 const routes: Routes = [
   {
@@ -22,6 +23,10 @@ const routes: Routes = [
   {
     path: 'contact',
     component: PageContactComponent
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent
   },
   {
     path: '**',

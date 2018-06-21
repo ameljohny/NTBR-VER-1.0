@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+declare var $;
 @Component({
   selector: 'app-section-accordion',
   templateUrl: './section-accordion.component.html',
@@ -19,6 +19,10 @@ export class SectionAccordionComponent implements OnInit {
     this.className = this.className.replace('inactivetabs', 'activetabs');
     });
   }
+
+  $('#myModal').on('shown.bs.modal', function () {
+    $('#myInput').trigger('focus');
+  });
   }
 
 }

@@ -25,7 +25,9 @@
       0% { opacity: .2; }
       100% { opacity: 0; }
       }
-    
+    .modal-body{
+      overflow-y: scroll;
+    }
       /* DESKTOP_768+ */
     
       .page-accordion{

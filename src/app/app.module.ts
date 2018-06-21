@@ -12,7 +12,7 @@ import { PageContactComponent } from './contact/page-contact/page-contact.compon
 import { NavbarContactComponent } from './contact/navbar-contact/navbar-contact.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { PageGalleryComponent } from './gallery/page-gallery/page-gallery.component';
+import { GalleryComponent } from './gallery/gallery/gallery.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +27,7 @@ import { PageGalleryComponent } from './gallery/page-gallery/page-gallery.compon
     NavbarContactComponent,
     FooterComponent,
     NavbarComponent,
-    PageGalleryComponent
+    GalleryComponent
   ],
   imports: [
     BrowserModule,

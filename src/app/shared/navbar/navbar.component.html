@@ -1,31 +1,53 @@
-<nav class="navbar navbar-expand-md navbar-color navbar-fixed">
+<nav class="navbar navbar-expand-md glassBackgrounnd navbar-fixed navbar-color">
   <!-- Brand -->
   <a class="navbar-brand" href="www.nehrutrophy.nic.in">
-      <img src="/assets/ntbrlogo.png" alt="Logo" style="width:40px;">
+      <img src="/assets/ntbrlogo.png" alt="Logo" style="width:25px;">
     </a>
   <!-- Toggler/collapsibe Button -->
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-    <span class="navbar-toggler-icon"></span>
+  
   </button>
 
   <!-- Navbar links -->
   <div class="collapse navbar-collapse " id="collapsibleNavbar">
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" routerLink = '/home'  href="home">HOME</a>
+        <a class="nav-link" routerLink = '/home' routerLinkActive = ' nav-active ' href="home">HOME</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink = '/about' href="about">ABOUT</a>
+        <a class="nav-link" routerLink = '/about' routerLinkActive = ' nav-active ' href="about">ABOUT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink = '/contact' href="contact">CONTACT</a>
+        <a class="nav-link" routerLink = '/contact' routerLinkActive = ' nav-active ' href="contact">CONTACT</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink = '/home' href="#">GALLERY</a>
+        <a class="nav-link" routerLink = '/gallery' routerLinkActive = ' nav-active ' href="gallery">GALLERY</a>
       </li>
       <li class="nav-item booking">
-        <a id="button-buy " class="" href="#">BUY TICKETS</a>
+        <a id="button-buy " class="" routerLink = '/buytickets' href="buytickets">BUY TICKETS</a>
       </li>
     </ul>
+
   </div>
+    <div class="hidden-md-down">
+      <ul class="ml-auto">
+        <li class="nav-item dropdown hidden-md-down">
+          <a class="nav-link " href="#" id="navbardrop" data-toggle="dropdown">
+            <div class="navbar-toggler-icon hamburger mr-auto" id="hamburger-6">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </a>
+          <div class="dropdown-menu">
+            <a class="nav-link dropdown-item" data-toggle="dropdown" routerLink = '/home' routerLinkActive = ' nav-active ' href="home">HOME</a>
+            <a class="nav-link dropdown-item" data-toggle="dropdown" routerLink = '/about' routerLinkActive = ' nav-active ' href="about">ABOUT</a>
+            <a class="nav-link dropdown-item" data-toggle="dropdown" routerLink = '/contact' routerLinkActive = ' nav-active ' href="contact">CONTACT</a>
+            <a class="nav-link dropdown-item" data-toggle="dropdown" routerLink = '/gallery' routerLinkActive = ' nav-active ' href="gallery">GALLERY</a>
+            <a id="button-buy " class="nav-link" href="#">BUY TICKETS</a>
+          </div>
+        </li>
+    
+      </ul>
+    </div>
 </nav>
