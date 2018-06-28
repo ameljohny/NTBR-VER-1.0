@@ -5,6 +5,11 @@
 /tmp
 /out-tsc
 
+
+#gallery
+/src/assets/img
+
+
 # dependencies
 /node_modules
 
