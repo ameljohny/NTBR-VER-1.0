@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-// import { HttpClient, HttpHeaders } from '@angular/common/http';
-// import { Router } from '@angular/router';
-// import { Observable } from 'rxjs/Observable';
-// import { tap, catchError } from 'rxjs/operators';
-// import { of } from 'rxjs/observable/of';
+// import * as $ from 'jquery'
+// import * as $ from 'jquery';
+declare var $ : any
 declare var moment;
-declare var $;
+
+
 
 @Component({
   selector: 'app-section-live',
@@ -13,12 +12,11 @@ declare var $;
   styleUrls: ['./section-live.component.scss']
 })
 export class SectionLiveComponent implements OnInit {
-news: any;
+
   constructor() { }
-  // private http: HttpClient, private router: Router
+
   ngOnInit() {
-
-
+    
     $(document).ready(function() {
       let clock;
      // Grab the current date
@@ -65,31 +63,9 @@ news: any;
     });
 
     $('#myModal').on('shown.bs.modal', function () {
-      $('#myInput').trigger('focus');
-    });
-
-  //   // const httpOptions = {
-  //   //   headers: new HttpHeaders({ 'Authorization': sessionStorage.getItem('jwtToken') })
-  //   // };
-  //   this.http.get('/api/news').subscribe(data => {
-  //     this.news = data;
-  //     console.log(this.news);
-  //   }, err => {
-  //     if (err.status === 401) {
-  //       this.router.navigate(['login']);
-  //     }
-  //     }
-  //   );
-  // }
-
-  // logout() {
-  //   sessionStorage.removeItem('jwtToken');
-  //   this.router.navigate(['login']);
-  // }
+      $('#myInput').trigger('focus')
+    })
   }
-  }
+  
 
-
-
-
-
+}
