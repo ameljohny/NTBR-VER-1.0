@@ -1,255 +1,157 @@
-.page-contact {
-    width: 100%;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    height: 100vh;
-    background-image: url('/assets/bg-about.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    overflow: hidden;
-  }
+.page-about {
+  width: 100%;
+  padding-top: 80px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-image: url("/assets/bg-about.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
   .contentBasediv {
-    
-      padding: 20px;
-      background: transparent;
-    width: 80%;
-    @media (max-width:1205px){
+    width: 75%;
+    @media screen and (max-width: 1279px) {
       width: 100%;
     }
-    .feedbackCardContainer{
-      background: rgba(21, 21, 30, 0.5) !important ;
-      border: 1px solid rgba(21, 21, 30, 0.7);
-      box-shadow: 0px 0px 10px  rgb(0, 0, 0);
-      display: flex;
-      flex-flow: column nowrap;
-      justify-content: center;
-      align-items:center;
-      height: 200px;  
-      color: #fff !important;
-       .feedbackCard{
-         margin: auto;
-       }
-      }
-    .patronCardContainer{
-      flex-flow: row wrap;
-      text-align: center;
-      
 
-      .patronCard{
-      margin-bottom: 10px;
-        img{
-          margin-bottom: 10px;
+    .contentContainer {
+      height: 100%;
+      overflow: scroll;
+
+      .contentBox {
+        min-height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        .header {
+          color: #fff !important;
+          margin-left: 25px;
         }
-        padding: 5px;
-        background: rgba(21, 21, 30, 0.5) !important ;
-      border: 1px solid rgba(21, 21, 30, 0.7);
-      box-shadow: 0px 0px 10px  rgb(0, 0, 0);
-        p{
-          margin-bottom: 5px;
-          color: rgb(255, 255, 255);
-          font-weight: 600;
+        .pageContent {
+          height: 80%;
+
+          .patronsContainer {
+            margin: 25px 20px;
+            @media screen and (max-width: 768px) {
+              margin: 15px 20px;
+            }
+            justify-content: center;
+          }
+
+          .patronCard {
+            margin-bottom: 10px;
+            text-align: center;
+            img {
+              margin-bottom: 10px;
+            }
+            padding: 5px;
+            background: rgba(21, 21, 30, 0.5) !important ;
+            border: 1px solid rgba(21, 21, 30, 0.7);
+            box-shadow: 0px 0px 10px rgb(0, 0, 0);
+            p {
+              margin-bottom: 5px;
+              color: rgb(255, 255, 255);
+              font-weight: 600;
+            }
+          }
+          .img-fluid {
+            height: 15vh;
+          }
         }
-      }
-      .img-fluid{
-        height: 15vh;
-      }
-    }
-    .row{
-      justify-content: center;
-      padding: 5% 10px;
-      
-    }
-    #content-committee{
-      margin-bottom: 450px;
-    }
-    #locationCardContainer{
-      align-items: flex-start;
-      #map-container{
-        height: 400px;
-      }
-    }
-    strong{
-      font-weight: 600;
-    }
-    height: 100%;
-    height: 100vh;
-    margin: 80px 0px 50px 0;;
-    display: inline-block;
-    overflow: hidden;
-  }
-  
-  .contentContainer {
-    padding-right: 17px;
-    box-sizing: content-box;
-    width: 100%;
-    height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    margin-bottom: 40px;
-  }
-  .sub-content{
-    padding-left: 20px;
-  }
-  .contact-icon{
-    padding: 5px;
-    font-size: 20px;
-  }
-  .contentBox {
-    margin-bottom: 80px;
-    width: 100%;
-    min-height: 100vh;
-    
-    @media (max-width:768px) {
-      margin-bottom: 40px;
-    }
-   
-    h1 {
-      color: rgb(255, 255, 255);
-      padding-left: 3%;
-    }
-    h6{
-      color: rgb(255, 255, 255);
-    }
-    .pageContent {
-     .contactCardContainer{
-      background: transparent ;
-       .committee-table{
-         margin: auto;
-        text-align: left;
-        padding: 20px 0;
-        align-self: center;
-       }
-       .contactCard{
-         margin: 3%;
-         border-radius: 5px;
-         background: rgba(21, 21, 30, 0.5) ;
-         border: 1px solid rgba(21, 21, 30, 0.7);
-         box-shadow: 0px 0px 10px  rgb(0, 0, 0);
-         padding: 3%;
-         .fa-check{
-           color: rgb(39, 238, 39);
-         }
-         .fa-ban{
-           color: rgb(221, 28, 28);
-         }
-         .fa-phone{
+        .contactCard {
+          margin: 10px 0px;
+          
+        }
+        .fa-check {
+          color: rgb(39, 238, 39);
+        }
+        .fa-ban {
+          color: rgb(221, 28, 28);
+        }
+        .fa-phone {
           color: rgb(10, 68, 255);
         }
-        .fa-mobile{
+        .fa-mobile {
           font-size: 25px;
           color: rgb(10, 68, 255);
         }
-        .fa-envelope{
+        .fa-envelope {
           color: rgb(221, 28, 28);
         }
-        .fa-fax{
+        .fa-fax {
           color: rgb(10, 68, 255);
         }
-        p{  position: relative;
-          i{
-            position: absolute;
-            top: 4px;
-            left: -16px
+        .contact-icon {
+          padding: 5px;
+          font-size: 20px;
+        }
+        h6,h5 {
+          color: #fff;
+        }
+
+        .committee-table {
+          margin: auto;
+          text-align: left;
+          padding: 20px 0;
+          align-self: center;
+
+          td,
+          th {
+            color: #fff;
           }
-          margin-left: 16px;
-          font-size: 16px;
-          color: rgb(255, 255, 255);
-          font-weight: 600;
+        }
+        hr{
+          color: #fff;
+          background-color: #fff;
+        }
+        #map-container {
+          height: 400px;
+        }
+        .feedbackContainer{
+          flex-flow: column nowrap;
+          text-align: center
         }
       }
-     }
-     
     }
-  }
-  th{
-    color: rgb(48, 189, 255);
-    font-weight: 500;
-  }
-  td{
-    color: #fff;
   }
 
   .navContainer {
-    @media (max-width:1205px)
-    {
-      display: none;
+    width: 25%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-content: flex-end;
+    @media screen and (max-width: 1279px) {
+      width: 0px;
     }
-    width: 20%;
-    height: 100vh;
-    margin: 0;
-    z-index: 10;
-    display: inline-block;
-    overflow-x: hidden;
-    position: relative;
-    .verticalnav {
-      position: absolute;
-      top: 25vh;
-      background: rgba(21, 21, 30, 0.5) !important ;
-      border: 1px solid rgba(21, 21, 30, 0.7);
-      box-shadow: 0px 0px 10px  rgb(0, 0, 0);
-      right: 0;
+
+    .verticalNav {
       height: 50vh;
-      width: 15vw;
-      // clip-path: polygon(35% 0%, 100% 0%, 100% 100%, 0% 100%);
-      -webkit-transform: skew(-20deg);
-      -moz-transform: skew(-20deg);
-      -o-transform: skew(-20deg);
-      margin-right: -75px;
       display: flex;
       flex-flow: column nowrap;
       justify-content: center;
-      align-self: center;
-      align-items: flex-start;
     }
-    #verticallinks li :active{
-      color:rgb(48, 189, 255)!important;
-      text-decoration: none;
-      
-  }
-  .verticalnav ul {
-      -webkit-transform: skew(20deg);
-      -moz-transform: skew(20deg);
-        -o-transform: skew(20deg);
-  
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      height: 200px;
+
+    .aboutList {
       display: flex;
+      width: 200px;
       flex-flow: column nowrap;
-      justify-content: space-around;
+      justify-content: center;
       align-items: flex-start;
+      cursor: pointer;
+      margin-bottom: 0px;
+    }
+
+    .aboutListItem {
+      padding: 20px;
+    }
+
+    .downloadButton {
+      background: linear-gradient(-45deg, #185a9d, #43cea2);
+      cursor: pointer;
+      width: 200px;
+      height: 40px;
+      border: 0px;
+    }
   }
-  
-   a{
-      color:#fff;
-      
-  }
-  .routerLinkActive{
-      color: rgb(27, 143, 238);
-  }
-  
-  #li1{
-      padding-left: 75px;
-  }
-  #li2{
-      padding-left: 60px;
-  }
-  #li3{
-      padding-left: 45px;
-  }
-  #li4{
-      padding-left: 30px;
-  }
-  #li5{
-    padding-left: 15px;
 }
-#li6{
-  padding-left: 0px;
-}
-  #li1:hover, #li2:hover, #li3:hover, #li4:hover{
-      color: rgb(79, 248, 248);
-  }
-  }
-  
