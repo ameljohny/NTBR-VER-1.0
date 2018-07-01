@@ -13,38 +13,27 @@ export class PageAboutComponent implements OnInit {
   }
   ngOnInit() {
 
+    $('ul li a[href^=\'#\']').on('click', function(e) {
 
-    $(document).ready(function() {
-      // Add smooth scrolling to all links
-      $('a').on('click', function(event) {
-        // Make sure this.hash has a value before overriding default behavior
-        if (this.hash !== '') {
-          // Prevent default anchor click behavior
-          event.preventDefault();
+      // prevent default anchor click behavior
+      e.preventDefault();
 
-          // Store hash
-          const hash = this.hash;
+      // store hash
+      const hash = this.hash;
+      console.log(' before function ' + $(hash).offset().top);
+      // animate
+      $('.contentBasediv, .contentContainer').animate({
+          scrollTop: $(hash).offset().top
+        }, 1000, function() {
+          console.log('in function' + $(hash).offset().top);
+          // when done, add hash to url
+          // (default click behaviour)
+          window.location.hash = hash;
+        });
 
+        console.log('after function' + $(hash).offset().top);
 
-
-          // Using jQuery's animate() method to add smooth page scroll
-          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-          console.log(hash);
-          console.log( $(hash).offset().top);
-          if ( $(hash).offset().top !== 0) {
-            const targetTop = $(hash).offset().top - $('.contentContainer > *').offset().top;
-            console.log(targetTop + 'targettop');
-            // $('#contentContainer').animate({scrollTop: $(hash).offset().top }, 'slow');
-            $('.contentContainer').scrollTop(targetTop);
-            console.log( $(hash).offset().top);
-             // Add hash (#) to URL when done scrolling (default click behavior)
-     window.location.hash = hash;
-          }
-
-
-        } // End if
-      });
-    });
+   });
   }
 
 }

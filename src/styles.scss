@@ -72,7 +72,7 @@ ul, li, a, p, span, h1, h2, h3, h4, h5, h6{
   left: -18px;
   margin-left: 50%;
 
-  height: 40px;
+  height: 30px;
   z-index: 100;
 }
 .scroll-downs {
@@ -84,8 +84,8 @@ ul, li, a, p, span, h1, h2, h3, h4, h5, h6{
 }
 .mousey {
   width: 3px;
-  padding: 10px 15px;
-  height: 35px;
+  padding: 10px 10px;
+  height: 20px;
   border: 2px solid #fff ;
   border-radius: 25px;
   opacity: 0.75;
@@ -93,7 +93,7 @@ ul, li, a, p, span, h1, h2, h3, h4, h5, h6{
 }
 .scroller {
   width: 3px;
-  height: 10px;
+  height: 6px;
   border-radius: 25%;
   background-color:  #bcddff;
   animation-name: scroll;

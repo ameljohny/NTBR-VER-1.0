@@ -2,7 +2,7 @@
 @media screen and (orientation: landscape) {
     .page-accordion{
       height: 120vw;
-      background-color: #15151e;
+      background-color: transparent;
     
     }
     }
@@ -36,7 +36,7 @@
         font-display: flex;
         flex-direction: column;
         padding-top: 100px;
-        background-color: #15151e;
+        background-color: transparent;
         color: #fff;
         overflow-y: hidden;
         overflow-x: hidden;
@@ -59,7 +59,7 @@
         flex-direction: row;
         justify-content: stretch;
         overflow-x: hidden;
-        background-color: #15151e;
+        // background-color: #15151e;
         cursor: pointer;
       }
       .tabs{
@@ -79,7 +79,7 @@
          }
       .activetabs{
         width: 40vw;
-        background-color: #1f1f2c;
+        // background-color: #1f1f2c;
         -webkit-animation: fadein 1s linear forwards;
         animation: fadein 1s linear forwards;
         -webkit-transition: all 0.5s 0.2s;
