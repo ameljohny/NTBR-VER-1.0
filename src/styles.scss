@@ -45,7 +45,9 @@ p {
 .flex-start {
   align-self: flex-start;
 }
-
+.justify-space-around{
+  justify-content: space-around;
+}
 .justify-center {
   justify-content: center;
 }
@@ -84,7 +86,7 @@ ul, li, a, p, span, h1, h2, h3, h4, h5, h6{
   width: 3px;
   padding: 10px 15px;
   height: 35px;
-  border: 2px solid #43cea2 ;
+  border: 2px solid #fff ;
   border-radius: 25px;
   opacity: 0.75;
   box-sizing: content-box;
@@ -93,7 +95,7 @@ ul, li, a, p, span, h1, h2, h3, h4, h5, h6{
   width: 3px;
   height: 10px;
   border-radius: 25%;
-  background-color:  #185a9d;
+  background-color:  #bcddff;
   animation-name: scroll;
   animation-duration: 2.2s;
   animation-timing-function: cubic-bezier(.15,.41,.69,.94);

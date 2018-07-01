@@ -21,7 +21,7 @@
         min-height: 100%;
         display: flex;
         flex-flow: column nowrap;
-        justify-content: center;
+        justify-content:center;
 
         .header {
           color: #fff !important;
@@ -60,7 +60,9 @@
         }
         .contactCard {
           margin: 10px 0px;
-          
+        .fa{
+          font-size: 20px;
+        }
         }
         .fa-check {
           color: rgb(39, 238, 39);
@@ -69,17 +71,35 @@
           color: rgb(221, 28, 28);
         }
         .fa-phone {
-          color: rgb(10, 68, 255);
+          color: #185a9d;
         }
         .fa-mobile {
           font-size: 25px;
-          color: rgb(10, 68, 255);
+          color: #185a9d;
         }
         .fa-envelope {
           color: rgb(221, 28, 28);
         }
         .fa-fax {
-          color: rgb(10, 68, 255);
+          color: #185a9d;
+        }
+        .fa-map-marker{
+          color: #d86112;
+        }
+        .fa-ticket{
+          color: #185a9d;
+        }
+        .fa-plane{
+          color: #185a9d;
+        }
+        .fa-road{
+          color: #185a9d;
+        }
+        .fa-train{
+          color: #185a9d;
+        }
+        .fa-bus{
+          color: #185a9d;
         }
         .contact-icon {
           padding: 5px;
@@ -88,7 +108,7 @@
         h6,h5 {
           color: #fff;
         }
-
+        
         .committee-table {
           margin: auto;
           text-align: left;
@@ -134,7 +154,7 @@
 
     .aboutList {
       display: flex;
-      width: 200px;
+      width: 250px;
       flex-flow: column nowrap;
       justify-content: center;
       align-items: flex-start;
@@ -146,12 +166,5 @@
       padding: 20px;
     }
 
-    .downloadButton {
-      background: linear-gradient(-45deg, #185a9d, #43cea2);
-      cursor: pointer;
-      width: 200px;
-      height: 40px;
-      border: 0px;
-    }
   }
 }
