@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import $ from 'jquery';
-
+import {TranslateService} from '@ngx-translate/core';
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -8,7 +8,7 @@ import $ from 'jquery';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
 
   ngOnInit() {
     $(document).ready(function() {
@@ -18,5 +18,7 @@ export class NavbarComponent implements OnInit {
     });
 
   }
-
+  useLanguage(language: string) {
+    this.translate.use(language);
+  }
 }
